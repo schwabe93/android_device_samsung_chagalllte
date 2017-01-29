@@ -11,13 +11,13 @@ PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_MODEL := SM-T805
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common AOKP stuff.
+$(call inherit-product, vendor/aokp/configs/common_full_tablet_wifionly.mk)
 
-# Inherit more LineageOS stuff.
-$(call inherit-product, vendor/cm/config/telephony.mk)
+# Inherit more AOKP stuff.
+$(call inherit-product, vendor/aokp/configs/telephony.mk)
 
-PRODUCT_NAME := lineage_chagalllte
+PRODUCT_NAME := aokp_chagalllte
 PRODUCT_DEVICE := chagalllte
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
